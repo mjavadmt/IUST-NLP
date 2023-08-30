@@ -6,7 +6,7 @@ This repository contains NLP course Workshops and Exam questions
 Visual Question Answering(VAQ) is implemented with extracting features of image with *ResNet* and extracting features of question with *sentence transformers(distilbert-base-nli-mean-tokens)* and then concatenating these and with fully connected layer at the end of network will lead to softmax classification between labels.
 
 ## MiniVQA Custom Transformer
-Custom Transformer can help us to dig through the details of transformer model. Image features were extracted before and saved into to the pickle file and then pretrained embeddings of BERT were used to tokenize and initialize our question embedding. We implemented custom positional encoder, and we could use any number of hidden layers other than 12(default BERT 12) and hidden size other than 768(default BERT 768). supermacy of this implementation compared to previous VQA is that instead of predicting label for each question, it generates answer to each question which is fantastic.
+Custom Transformer can help us to dig through the details of transformer model. Image features were extracted before and saved into to the pickle file and then pretrained embeddings of BERT were used to tokenize and initialize our question embedding. We implemented custom positional encoder, and we could use any number of hidden layers other than 12(default BERT 12) and hidden size other than 768(default BERT 768).
 
 ## HF_models
 Fine-tuning BERT on a sample dataset and then push the model and tokenizer to HuggingFace.
